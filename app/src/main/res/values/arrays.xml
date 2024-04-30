@@ -1,0 +1,16 @@
+<resources>
+
+    <string-array name="more_array">
+        <item>Weather</item>
+        <item>Maps</item>
+        <item>Notifications</item>
+    </string-array>
+    <string-array name="options_array">
+        <item>Mauritius</item>
+        <item>London</item>
+        <item>Glasgow</item>
+        <item>New York</item>
+        <item>Bangladesh</item>
+        <item>Oman</item>
+    </string-array>
+</resources>

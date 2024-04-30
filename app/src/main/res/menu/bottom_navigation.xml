@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/previous"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/more"
+        android:title="Weather"
+        android:icon="@drawable/obse" />/>
+    <item
+        android:id="@+id/next"
+        android:title="Mapping"
+        android:icon="@drawable/flags"/>
+</menu>

@@ -1,0 +1,334 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/frame_corners">
+
+        <LinearLayout
+            android:id="@+id/weatherDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/forecastIcon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/max"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                android:text="Max Temperature"/>
+
+            <ImageView
+                android:id="@+id/maxIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hot"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginRight="40dp"/>
+
+
+
+            <TextView
+                android:id="@+id/maxtemperatureView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/min"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Max Temperature"/>
+
+                <ImageView
+                    android:id="@+id/minIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/thermometer"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/mintemperatureView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/direction"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Wind Direction"/>
+
+                <ImageView
+                    android:id="@+id/directionIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/direction"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/windDirectionView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="WindSpeed"/>
+
+                <ImageView
+                    android:id="@+id/speedIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/windy"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/windSpeedView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                />
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Pressure"/>
+
+                <ImageView
+                    android:id="@+id/pressureIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pressure"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/pressureView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Humidity"/>
+
+                <ImageView
+                    android:id="@+id/humidityIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/humidity"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/humidityView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/rise"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Sunrise"/>
+
+                <ImageView
+                    android:id="@+id/riseIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sunriseone"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:id="@+id/sunriseView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/set"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:text="SunSet"/>
+
+                <ImageView
+                    android:id="@+id/setIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sunsetone"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/sunsetView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"/>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

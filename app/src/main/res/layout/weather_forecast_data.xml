@@ -1,0 +1,57 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/frame_corners">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Day of Week TextView -->
+        <TextView
+            android:id="@+id/dayOfWeekTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"/>
+
+        <!-- Min Temperature TextView -->
+        <TextView
+            android:id="@+id/minTemperatureTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"/>
+
+        <!-- Weather Condition ImageView -->
+        <ImageView
+            android:id="@+id/weatherConditionImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/day_clear"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"/>
+
+        <!-- Max Temperature TextView -->
+        <TextView
+            android:id="@+id/maxTemperatureTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"/>
+    </LinearLayout>
+
+</FrameLayout>

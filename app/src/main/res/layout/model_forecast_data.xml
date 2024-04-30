@@ -1,0 +1,231 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/frame_corners">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/maxTemperatureTextViewFirstOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/minTemperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+           />
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="/"
+            />
+
+        <TextView
+            android:id="@+id/maxTemperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/weatherConditionTextViewFirstOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:gravity="center">
+
+            <!-- First Row -->
+
+            <!-- Humidity -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/humidityIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/humidity"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/humidityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/humidityTextViewFirstOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                />
+
+            </LinearLayout>
+
+
+            <!-- Pressure -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/pressureIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pressure"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                />
+
+                <TextView
+                    android:id="@+id/pressureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/pressureTextViewFirstOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <!-- Second Row -->
+
+
+
+            <!-- Sun Rise -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/riseIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sunriseone"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/sunRiseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SunRise"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/sunRiseTextViewFirstOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+            <!-- Sun Set -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/setIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sunsetone"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/sunSetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SunSet"
+                    android:textSize="18sp"
+                   />
+
+                <TextView
+                    android:id="@+id/sunSetTextViewFirstOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
